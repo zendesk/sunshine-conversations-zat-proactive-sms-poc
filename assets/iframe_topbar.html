@@ -1,0 +1,28 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <!-- http://garden.zendesk.com -->
+    <link rel="stylesheet" href="https://assets.zendesk.com/apps/sdk-assets/css/2/zendesk_garden.css" type="text/css">
+    <link rel="stylesheet" href="style/topbar.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <h1>With this tool you can send a proactive SMS</h1>
+    <br>
+    <p>Input your text here:</p>
+    <textarea id="text"></textarea>
+    <br>
+    <p>Input the contact phone number here (please use the following format: +15141234567 )</p>
+    <input type="tel" id="phone">
+    <br>
+    <br>
+    <input type="submit" id="send" value="Send SMS">
+    
+    <!-- https://github.com/zendesk/zendesk_app_framework_sdk -->
+    <script type="text/javascript" src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

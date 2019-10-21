@@ -1,0 +1,12 @@
+body {
+    margin: 50px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+textarea {
+    width: 30%;
+    height: 10%;
+}

@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "SMS Notifications",
+    "short_description": "Allows to send proactive messages by SMS (Twilio) using the Smooch Notification API.",
+    "long_description": "",
+    "installation_instructions": "Simply click install and setup."
+  }
+}
