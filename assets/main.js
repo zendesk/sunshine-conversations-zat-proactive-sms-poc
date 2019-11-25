@@ -26,8 +26,8 @@ $(function() {
       $(document).ready(function() {
         //Fetch the app parameters
         client.metadata().then(function(meta) {
-          appId = meta.settings['Smooch appId'];
-          integrationId = meta.settings['SMS Integration ID'];
+          appId = meta.settings['appId'];
+          integrationId = meta.settings['integrationId'];
         });
 
         //Prepare and send SMS
@@ -56,7 +56,7 @@ $(function() {
 
           var settings = {
             url: 'https://api.smooch.io/v1/apps/'+appId+'/notifications',
-            headers: {"Authorization": "Bearer {{setting.JWT}}"},
+            headers: {"Authorization": "Bearer {{setting.jwt}}"},
             secure: true,
             type: 'POST',
             contentType: 'application/json',

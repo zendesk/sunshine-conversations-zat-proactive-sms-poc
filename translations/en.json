@@ -1,8 +1,18 @@
 {
   "app": {
     "name": "SMS Notifications",
-    "short_description": "Allows to send proactive messages by SMS (Twilio) using the Smooch Notification API.",
-    "long_description": "",
-    "installation_instructions": "Simply click install and setup."
+    "short_description": "Allows to send proactive messages by SMS",
+    "long_description": "Allows to send proactive messages by SMS using the Sunshine Conversations Notification API. The SMS will be sent through the Twilio or MessageBird channel you set up on your SC dashboard.",
+    "installation_instructions": "Please make sure that the Notification API has been enable for your account.\nThe Sunshine Conversations Team can help you get the value of each parameter.",
+    "parameters": {
+      "appId" : { "label": "Sunshine Conversations ID" , 
+        "helpText": "ID of your app on the Sunshine Conversations dashboard (URL: https://smooch.io)\nPlease make sure that the Notification API has been enable for your account." },
+
+      "jwt"     : { "label": "Sunshine Conversations App token" , 
+        "helpText": "- STEP 1: Go to www.jwt.io\n\n- STEP 2: in header:\n{\n\n\"alg\": \"HS256\",\n \"typ\": \"JWT\",\n\"kid\": \"<<YOUR APP KEY>>\"\n}\n\n- STEP 3: in payload:\n{\n\"scope\": \"app\"\n}\n\n- STEP 4: in signature, put the secret that matches the key you provided in the header\non the left part, you’ll get your token (jwt)"},
+
+      "integrationId"    : { "label": "SMS Integration ID" , 
+        "helpText": "Extract if from the URL of your Twilio/MessageBird Integration on the Sunshine Conversations dashboard: https://app.smooch.io/apps/<<YOUR APP ID>>/channels/<<YOUR WA INTEGRATION ID>>"  }
+    }
   }
 }

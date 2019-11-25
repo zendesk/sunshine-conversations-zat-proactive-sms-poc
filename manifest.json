@@ -1,7 +1,7 @@
 {
-  "name": "SMS Notifications (Alpha)",
+  "name": "SMS Notifier",
   "author": {
-    "name": "Alexis C",
+    "name": "Alexis Cozette",
     "email": "acozette@zendesk.com",
     "url": ""
   },
@@ -13,24 +13,24 @@
     }
   },
   "parameters": [
-  {
-    "name": "Smooch appId",
-    "type": "text",
-    "required": true,
-    "secure": false
-  },
-  {
-    "name": "JWT",
-    "type": "text",
-    "required": true,
-    "secure": true
-  },
-  {
-    "name": "SMS Integration ID",
-    "type": "text",
-    "required": true,
-    "secure": false
-  }
+    {
+      "name": "appId",
+      "type": "text",
+      "required": true,
+      "secure": false
+    },
+    {
+      "name": "jwt",
+      "type": "text",
+      "required": true,
+      "secure": true
+    },
+    {
+      "name": "integrationId",
+      "type": "text",
+      "required": true,
+      "secure": false
+    }
   ],
   "version": "1.0",
   "frameworkVersion": "2.0"
