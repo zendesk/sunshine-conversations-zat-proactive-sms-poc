@@ -37,7 +37,6 @@ $(function() {
           var phone = $('#phone').val();
 
           var data = {
-            "storage": "full",
               "destination": {
                 "integrationId": integrationId,
                 "destinationId": phone
